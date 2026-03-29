@@ -6,7 +6,7 @@ resource "aws_instance" "testvm" {
   vpc_security_group_ids = [var.sg]
 
   tags = {
-    Name = "${var.vpc-name}"
+    Name = "${var.vpc-name}-VM"
   }
 
     user_data = <<-EOF
